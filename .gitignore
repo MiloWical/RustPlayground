@@ -10,4 +10,8 @@ Cargo.lock
 **/*.rs.bk
 
 # Visual Studio Code
-.vscode/
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+
+src/hello-world/target/*
