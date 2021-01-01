@@ -1,0 +1,10 @@
+[package]
+name = "mysql-test"
+version = "0.1.0"
+authors = ["Milo Wical <milo_wical@carmax.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mysql = { version="20.1.0" }

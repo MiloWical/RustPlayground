@@ -14,7 +14,7 @@
       "label": "Rust: cargo build",
       "dependsOrder": "sequence",
       "dependsOn": [
-        "Rust: cargo clean"
+        // "Rust: cargo clean"
       ]
     },
     {

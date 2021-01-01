@@ -12,7 +12,7 @@
       "program": "${workspaceFolder}/src/hello-world/target/debug/hello-world",
       "args": [],
       "cwd": "${workspaceFolder}",
-      "preLaunchTask": "${defaultBuildTask}"
+      "preLaunchTask": "Rust: cargo build"
     },
     {
       "name": "hello-world/Debug (Windows)",
@@ -23,6 +23,46 @@
       "stopAtEntry": false,
       "cwd": "${workspaceRoot}",
       "externalConsole": true
-  }
+    },
+
+    {
+      "name": "diesel-test/Debug (*nix)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/diesel-test/target/debug/diesel-test",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Rust: cargo build"
+    },
+    {
+      "name": "diesel-test/Debug (Windows)",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceRoot}/src/diesel-test/target/debug/diesel-test",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceRoot}",
+      "externalConsole": true
+    },
+
+    {
+      "name": "mysql-test/Debug (*nix)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/mysql-test/target/debug/mysql-test",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Rust: cargo build"
+    },
+    {
+      "name": "mysql-test/Debug (Windows)",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceRoot}/src/mysql-test/target/debug/mysql-test",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceRoot}",
+      "externalConsole": true
+    }
   ]
 }
