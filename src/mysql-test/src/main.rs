@@ -4,9 +4,7 @@
 // 2) A root user with the password "password"
 //
 // If this isn't accurate to your testing config,
-// change the URL on line 23 below.
-
-extern crate mysql;
+// change the URL on line 21 below.
 
 use mysql::*;
 use mysql::prelude::*;
