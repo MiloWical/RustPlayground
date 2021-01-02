@@ -1,10 +1,10 @@
 // This assumes the following setup:
 //
 // 1) A MySQL-compliant database running on localhost:3306
-// 2) A root user with the password "password".
+// 2) A root user with the password "password"
 //
 // If this isn't accurate to your testing config,
-// Change the URL on line 23 below.
+// change the URL on line 23 below.
 
 extern crate mysql;
 
