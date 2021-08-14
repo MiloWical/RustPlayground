@@ -5,6 +5,7 @@
   "version": "0.2.0",
   "configurations": [
 
+
     {
       "name": "hello-world/Debug (*nix)",
       "type": "lldb",
@@ -63,6 +64,26 @@
       "stopAtEntry": false,
       "cwd": "${workspaceRoot}",
       "externalConsole": true
-    }
+    },
+
+    {
+      "name": "actix-web-service/Debug (*nix)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/actix-web-service/target/debug/actix-web-service",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Rust: cargo build"
+    },
+    {
+      "name": "actix-web-service/Debug (Windows)",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceRoot}/src/actix-web-service/target/debug/actix-web-service",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceRoot}",
+      "externalConsole": true
+    },
   ]
 }
