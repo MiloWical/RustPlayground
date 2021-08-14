@@ -1,0 +1,1 @@
+docker build -t mariadb-test-db .
