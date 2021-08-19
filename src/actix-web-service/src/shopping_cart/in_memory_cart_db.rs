@@ -10,13 +10,8 @@ struct Database {
   db_store: HashMap<String, String>
 }
 
-impl CartDb for InMemoryCartDb
-{
-  // fn test(x: &str) -> String {
-  //   format!("test({}) invoked", x)
-  // }
-
-  fn new(conn_str: &str) -> Self {
+impl InMemoryCartDb {
+  pub fn new(conn_str: &str) -> Self {
     InMemoryCartDb {
       db: Database {
         db_store: HashMap::new(),
@@ -24,8 +19,15 @@ impl CartDb for InMemoryCartDb
       }
     }
   }
+}
 
-  fn get_cart(&self, cart_id: &str) -> String {
+impl CartDb for InMemoryCartDb
+{
+  // fn test(x: &str) -> String {
+  //   format!("test({}) invoked", x)
+  // }
+
+  fn get_cart_for(&self, cart_id: &str) -> String {
     "Got the cart!".to_string()
   }
 }
